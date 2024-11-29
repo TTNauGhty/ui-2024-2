@@ -1,0 +1,106 @@
+body {
+  background-color: #121212;
+  color: white;
+}
+
+ion-toolbar,
+ion-footer {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Centrado de títulos y sección de contacto */
+h3, h2, p {
+  text-align: center;
+}
+
+/* Navegación del Header */
+ion-buttons .nav-link {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+ion-buttons .nav-link.active {
+  color: #ffc409;
+}
+
+ion-buttons .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+ion-header ion-toolbar {
+  border-bottom: 4px solid #ffc409; /* Cambia el color si es necesario */
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(25%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+/* Card Images */
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Mapa con hover */
+
+.map {
+  position: relative;
+  margin-top: 20px;
+}
+
+.map-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.mapa-text {
+  position: absolute;
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  pointer-events: none; /* Desactiva clics y eventos del mouse */
+}
+
+.map-image:hover {
+  filter: brightness(25%);
+}
+
+/* Sección de contacto */
+.contact {
+  margin-top: 20px;
+}

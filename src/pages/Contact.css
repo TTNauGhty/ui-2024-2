@@ -1,0 +1,163 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+ion-toolbar,
+ion-footer {
+background-color: #1e1e1e;
+color: white;
+}
+
+/* Centrado de títulos y sección de contacto */
+h3, h2, p {
+text-align: center;
+}
+
+/* Navegación del Header */
+ion-buttons .nav-link {
+margin: 0 10px;
+color: white;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+ion-buttons .nav-link.active {
+color: #ffc409;
+}
+
+ion-buttons .nav-link:hover {
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 5px;
+}
+
+ion-header ion-toolbar {
+border-bottom: 4px solid #ffc409; /* Cambia el color si es necesario */
+}
+
+/* Banner */
+.banner {
+position: relative;
+width: 100%;
+height: 300px;
+overflow: hidden;
+}
+
+.banner-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: brightness(25%);
+}
+
+.banner-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+z-index: 1;
+}
+
+
+/* Formulario de contacto */
+.contact-form {
+margin: 20px auto;
+padding: 20px;
+background-color: #1e1e1e;
+border-radius: 10px;
+max-width: 600px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-icon {
+    font-size: 25px; /* Ajusta el tamaño del icono */
+    margin-bottom: 10px; /* Da un margen inferior para separar el icono del texto */
+    color: #ffc409; /* Puedes ajustar el color de los iconos si lo deseas */
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column; /* Asegura que los iconos y los textos estén apilados verticalmente */
+    align-items: center; /* Centra los elementos dentro de cada tarjeta */
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+.contact-form label {
+display: block;
+margin-bottom: 5px;
+color: #ffc409;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: none;
+border-radius: 5px;
+background-color: #2a2a2a;
+color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+color: #888;
+}
+
+.contact-form button {
+width: 100%;
+padding: 10px;
+background-color: #ffc409;
+border: none;
+border-radius: 5px;
+color: black;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+background-color: #e6b307;
+}
+
+/* Mapa */
+.map {
+position: relative;
+margin-top: 20px;
+}
+
+.map-image {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+transition: filter 0.3s ease;
+}
+
+.mapa-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+background-color: rgba(0, 0, 0, 0.7);
+padding: 10px 20px;
+border-radius: 5px;
+text-align: center;
+font-size: 1.5rem;
+pointer-events: none;
+}
+
+.map-image:hover {
+filter: brightness(25%);
+}
+
+/* Sección de contacto */
+.contact {
+margin-top: 20px;
+}
+  
